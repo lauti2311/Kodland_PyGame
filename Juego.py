@@ -282,9 +282,20 @@ while run:
                 if game_over == -1:
                     draw_text('GAME OVER!!', font40, white, int(screen_width / 2 - 130),
                               int(screen_height / 2 + 50))
+
+                    # Pausa de 3 segundos
+                    pygame.display.flip()
+                    pygame.time.delay(3000)
+                    run = False  # Salir del bucle y cerrar el juego
+
                 if game_over == 1:
                     draw_text('GANASTE!!!! ', font40, white, int(screen_width / 2 - 130),
                               int(screen_height / 2 + 50))
+
+                    # Pausa de 3 segundos
+                    pygame.display.flip()
+                    pygame.time.delay(3000)
+                    run = False  # Salir del bucle y cerrar el juego
 
         if countdown > 0:
             draw_text('ESTAS LISTO?', font40, white, int(screen_width / 2 - 130),
