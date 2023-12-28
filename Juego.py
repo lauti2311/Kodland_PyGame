@@ -148,7 +148,6 @@ class Aliens(pygame.sprite.Sprite):
 
 
 # Clase proyectiles de los aliens
-# Clase Proyectiles
 class Alien_bullets(pygame.sprite.Sprite):
     def __init__(self, x, y):
         pygame.sprite.Sprite.__init__(self)
